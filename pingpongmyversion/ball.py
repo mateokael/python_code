@@ -17,7 +17,9 @@ class Ball(Turtle):
         self.goto(new_x, new_y)
 
     def bounce_y(self):
-        # self.y_move *= -1
+        self.y_move *= -1
+
+    def portal_y(self):
         self.goto(self.xcor(), self.ycor() * -1)  # portal mode
 
     def bounce_x(self):
