@@ -1,27 +1,5 @@
 class QuizBrain:
 
-    def __init__(self, qlist):
-        self.question_number = 0
-        self.score = 0
-        self.qqlist = qlist
-
-    def nextquestion(self):
-        currentquestion = self.qqlist[self.question_number]
-        self.question_number += 1
-        useranswer = input(
-            f"{self.question_number} : {currentquestion}zz")
-
-        self.checkanswer = (useranswer, currentquestion.answer)
-
-    def check_answer(self, useranswer, correct_answer):
-        if useranswer.lower() == correct_answer.lower():
-            self.score += 1
-            print("correct")
-        else:
-            print("wrong")
-        print(f"correcanswer {correct_answer}")
-        print(f"{self.score}/{self.question_number}")
-
     # def __init__(self, q_list):
     #     self.question_number = 0
     #     self.score = 0
